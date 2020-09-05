@@ -6,7 +6,7 @@ class Light extends Component {
     render() {
         let lightClass = className({
             Light,
-            'active': this.props.stateLight.active
+            'active': this.props.stateLight.active && this.props.stateLight.isLoop || this.props.stateLight.isChecked
         })
         return(
             <div className={lightClass + ' ' + this.props.stateLight.color}></div>

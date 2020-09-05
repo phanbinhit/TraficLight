@@ -1,7 +1,40 @@
 .TraficLight {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border: 2px solid black;
+    justify-items: center;
+    align-items: center;
+}
+
+.boxlight {
+    display: flex;
+    flex-direction: column;
     padding: 16px;
 }
 
+.control {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.formRadioButton {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonSwitch {
+    border: 1px solid #dc3545;
+    background-color: #fff;
+    padding: 4px 6px;
+    border-radius: 2px;
+    color: #dc3545;
+    font-size: 12px;
+}
+
+.buttonSwitch:hover {
+    background-color: #dc3545;
+    color: #fff;
+    font-weight: 500;
+} 
